@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="assets/images/logo/Model-logo.ico"
+      type="image/icon type"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Dancing+Script:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-home.css" />
+    <title>Modeline</title>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2025220003713127"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-FQBNM6G4Y9"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-FQBNM6G4Y9");
+    </script>
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        /* border: 1px solid var(--secondary-color); */
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <div class="menubar">
+        <span class="material-icons-sharp menuicon" id="menuicon" title="Menu">
+          menu
+        </span>
+        <img
+          src="assets/images/logo/android-chrome-512x512.png"
+          class="logo-png"
+          alt="Brand Logo"
+        />
+        <h1 class="logo-text" title="Modeline Logo">Modeline</h1>
+      </div>
+      <ul id="navbar-ul" class="homepage-navbar-ul">
+        <li><a href="home.html" id="home-page" title="Home Feed">Home</a></li>
+        <li><a href="shop.html" id="shop-page" title="Shop">Shop</a></li>
+        <li>
+          <a href="about.html" id="about-page" title="About Us">About</a>
+        </li>
+        <li>
+          <a href="contact.html" id="contact-page" title="Contact Us"
+            >Contact</a
+          >
+        </li>
+        <li>
+          <a
+            id="pricing-page"
+            title="Pricing"
+            style="
+              color: var(--secondary-color);
+              border-bottom: 2px solid var(--secondary-color);
+            "
+            >Pricing</a
+          >
+        </li>
+        <span
+          class="material-icons-sharp close-icon"
+          id="closeicon"
+          title="Close"
+        >
+          close
+        </span>
+      </ul>
+      <div class="btns">
+        <button type="button" class="profile-btn">
+          <span
+            class="material-icons-sharp profile-icon"
+            id="profileIcon"
+            title="My Profile"
+            onclick="window.location.href='my-profile.html'"
+          >
+            account_circle
+          </span>
+        </button>
+      </div>
+    </nav>
+
+    <main>
+      <section class="pricing" id="pricing">
+        <div class="free-account" id="freeAccount">
+          <h2>Free</h2>
+          <ul>
+            <li>Normal Quality Images</li>
+            <li>Normal Loading</li>
+            <li>Load Upto 80 Images Per Day</li>
+            <li>Fullview upto 40 Images</li>
+          </ul>
+          <a href="#" class="account-continue-button">Get Started For Free</a>
+        </div>
+        <div class="premium-account" id="premiumAccount">
+          <h2>Premium</h2>
+          <ul>
+            <li>High Quality Images</li>
+            <li>Fast Loading</li>
+            <li>Load Upto 400 Images Per Day</li>
+            <li>Fullview All 400 Images</li>
+          </ul>
+          <a href="#" class="account-continue-button"
+            >Premium Access Just - $2</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/9f662d57eb.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    <script src="db.js"></script>
+  </body>
+</html>

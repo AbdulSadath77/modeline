@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/images/logo/Model-logo.ico" type="image/icon type" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Dancing+Script:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style-home.css" />
+  <title>Modeline</title>
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      /* border: 1px solid var(--secondary-color); */
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="menubar">
+      <span class="material-icons-sharp menuicon" id="menuicon" title="Menu">
+        menu
+      </span>
+      <img src="assets/images/logo/android-chrome-512x512.png" class="logo-png" alt="Brand Logo" />
+      <h1 class="logo-text" title="Modeline Logo">Modeline</h1>
+    </div>
+    <ul id="navbar-ul" class="homepage-navbar-ul">
+      <li>
+        <a id="home-page" title="Home Feed" style="
+              color: var(--secondary-color);
+              border-bottom: 2px solid var(--secondary-color);
+            ">Home</a>
+      </li>
+      <li><a href="shop.html" id="shop-page" title="Shop">Shop</a></li>
+      <li>
+        <a href="about.html" id="about-page" title="About Us">About</a>
+      </li>
+      <li>
+        <a href="contact.html" id="contact-page" title="Contact Us">Contact</a>
+      </li>
+      <li>
+        <a id="pricing-page" href="pricing.html" title="Pricing">Pricing</a>
+      </li>
+      <span class="material-icons-sharp close-icon" id="closeicon" title="Close">
+        close
+      </span>
+    </ul>
+    <div class="btns">
+      <button type="button" class="profile-btn">
+        <span class="material-icons-sharp profile-icon" id="profileIcon" title="My Profile"
+          onclick="window.location.href='my-profile.html'">
+          account_circle
+        </span>
+      </button>
+    </div>
+  </nav>
+  <main>
+    <section class="home" id="home">
+      <div class="image-cards-container" id="imageCardsContainer">
+        <div class="column-1" id="column1"></div>
+        <div class="column-2" id="column2"></div>
+        <div class="column-3" id="column3"></div>
+        <div class="column-4" id="column4"></div>
+        <div class="column-5" id="column5"></div>
+      </div>
+      <div class="spinner-container" id="spinnerContainer">
+        <div class="loading-spinner" id="loadingSpinner"></div>
+        <h4 class="loading-text" id="loadingText">Loading...</h4>
+      </div>
+
+      <template class="image-card-template">
+        <div class="image-card" id="imageCard">
+          <img src="#" alt="Image Description" class="picture" id="picture" />
+          <!-- <div class="btn-actions">
+              <div>
+                <button class="like-btn" id="likeBtn" title="Like"><span class="material-icons-sharp">
+                    favorite_border
+                  </span></button>
+                <small class="likes-count" id="likesCount">1000</small>
+              </div>
+              <button class="save-btn" id="saveBtn" title="Save Image"><span class="material-icons-sharp">
+                  turned_in_not
+                </span></button>
+            </div> -->
+        </div>
+      </template>
+    </section>
+  </main>
+  <!-- SCRIPT TAGS -->
+  <script src="https://kit.fontawesome.com/9f662d57eb.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script src="db.js"></script>
+</body>
+
+</html>

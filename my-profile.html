@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/images/logo/Model-logo.ico" type="image/icon type" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Dancing+Script:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style-home.css" />
+  <link rel="stylesheet" href="profile.css" />
+  <title>Modeline | My Profile</title>
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      /* border: 1px solid var(--secondary-color); */
+    }
+  </style>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="menubar">
+      <button type="button" id="goBackBtn" class="go-back-btn">
+        <span class="material-icons-sharp arrow-back-icon" id="arrowBackIcon" title="Back to Home"
+          onclick="window.location.replace('home.html')">arrow_back</span>
+      </button>
+      <img src="assets/images/logo/android-chrome-512x512.png" class="logo-png" alt="Brand Logo" />
+      <h1 class="logo-text" title="Modeline Logo">Modeline</h1>
+    </div>
+    <div class="btns">
+      <ol class="more-actions-list" id="moreActionsList">
+        <li>
+          <span class="material-icons-sharp close-list-icon" id="closeListIcon" title="Close">
+            close
+          </span>
+        </li>
+        <li>
+          <p><a href="#" id="editProfile">Edit Profile</a></p>
+        </li>
+        <li>
+          <p><a href="#" id="addMyShop">My Shop</a></p>
+        </li>
+        <li>
+          <p><a href="#" id="accountSettings">Account Settings</a></p>
+        </li>
+      </ol>
+      <button type="button" class="more-btn" id="moreBtn">
+        <span class="material-icons-sharp more-icon" id="moreActions" title="More Actions">more_vert</span>
+      </button>
+    </div>
+  </nav>
+  <!-- NAVBAR CLOSED -->
+
+  <!-- TOTAL DIV -->
+  <div class="profile-page-container">
+    <!-- HEADER -->
+    <header>
+      <div class="profile-picture" title="View Profile Picture"></div>
+      <div class="user-details">
+        <div class="follow-count">
+          <div class="posts">
+            <h2 id="posts">12</h2>
+            <small>Posts</small>
+          </div>
+          <div class="popularity">
+            <h2 id="popularity">1M</h2>
+            <small>Popularity</small>
+          </div>
+          <div class="following">
+            <h2 id="following">12</h2>
+            <small>Following</small>
+          </div>
+        </div>
+        <h3 id="userName" class="user name">john doe</h3>
+        <small class="bio" id="bio">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla a
+          numquam illum molestiae veritatis doloribus laborum animi ea maiores
+          odit? Suscipit explicabo quia adipisci culpa? Nostrum maxime
+          deserunt adipisci aspernatur?
+        </small>
+      </div>
+      <div class="social-accounts">
+        <a href="#"><small>YouTube</small></a>
+        <a href="#"><small>Instagram</small></a><a href="#"><small>Facebook</small></a><a
+          href="#"><small>Twitter</small></a><a href="#"><small>SnapChat</small></a>
+        <a href="#"><small>Website</small></a><a href="#"><small>Github</small></a>
+        <a href="#"><small>Pinterest</small></a><a href="#"><small>Link</small></a>
+      </div>
+    </header>
+    <!-- HEADER CLOSED -->
+
+    <!-- COLLABRATIONS -->
+    <div class="collabrations">
+      <div class="brand" id="addBrand" title="Add New Collabrated Brand">
+        <span class="material-icons-sharp add-brand-icon">add</span>
+      </div>
+    </div>
+    <!-- COLLABRATIONS CLOSED -->
+
+    <!-- TABS HOLDER -->
+    <div class="tab-holder">
+      <div class="post-and-shop-tabs">
+        <ul class="tab-names">
+          <li>
+            <a><small>Posts</small></a>
+          </li>
+          <li>
+            <a><small>Shop</small></a>
+          </li>
+        </ul>
+      </div>
+      <div class="post-tabs">
+        <section class="my-posts" id="myPosts"></section>
+        <section class="my-shop" id="myShop"></section>
+      </div>
+    </div>
+    <!-- TABS HOLDER CLOSED -->
+  </div>
+  <!-- TOTAL DIV CLOSED -->
+
+  <!-- SCRIPT TAGS -->
+  <script src="https://kit.fontawesome.com/9f662d57eb.js" crossorigin="anonymous"></script>
+  <script src="profile-script.js"></script>
+  <!-- SCRIPT TAGS CLOSED -->
+</body>
+
+</html>
